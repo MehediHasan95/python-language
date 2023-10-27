@@ -1,10 +1,15 @@
 """Lists is built-in data types in Python used to store collections of data"""
 
-
 """subjects: list = ["English", "Geography", "Science"]"""
-
 subjects = ["Mathematics", "Geography", "Science"]
 print(len(subjects))  # length: 3
+
+
+serial_numbers = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+print(serial_numbers[5])  # 30
+print(serial_numbers[6:])  # [35, 40, 45, 50]
+print(serial_numbers[2:6])  # [15, 20, 25, 30]
+print(serial_numbers[-1])  # 50
 
 """append()
 The append() method adds an item to the end of the list.
