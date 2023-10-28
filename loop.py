@@ -14,6 +14,7 @@ while index < len(countries):
     print(countries[index])
     index += 1
 
+
 # for loop
 for country in countries:
     print(country)

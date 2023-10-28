@@ -49,3 +49,29 @@ def find_odd_number(numbers):
 
 
 print(find_odd_number([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]))  # [5, 15, 25, 35, 45]
+
+
+"""
+    Factorial formula
+    !n = n! = n × (n-1) × (n-2) × (n-3) × ...
+    !1 : 1 
+    2! : 2 * 1 = 2
+    3! : 3 * 2 * 1 = 6
+    4! : 4 * 3 * 2 * 1 = 24
+    5! : 5 * 4 * 3 * 2 * 1 = 120
+    6! : 6 * 5 * 4 * 3 * 2 * 1 = 720
+    7! : 7 * 6 * 5 * 4 * 3 * 2 * 1 = 5040
+"""
+
+
+# Recursive Function
+def find_factorial(x):
+    multiple = 1
+    count = 1
+    while count <= x:
+        multiple = multiple * count
+        count += 1
+    return multiple
+
+
+print(find_factorial(7))  # 5040
